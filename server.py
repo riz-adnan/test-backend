@@ -2,10 +2,7 @@ import firebase_admin
 from firebase_admin import credentials, db
 from flask import Flask, request
 from flask_cors import CORS
-from dotenv import load_dotenv
 
-# Load environment variables from .env file
-load_dotenv()
 
 cred = credentials.Certificate("./newproj-4c059-firebase-adminsdk-baj41-46bdad62c8.json")
 firebase_admin.initialize_app(cred, {
